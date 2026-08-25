@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小智的社交冒險：智慧指引全集</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        h1 {
+            color: #4a90e2;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        p.subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #50b3a2;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            width: 80%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        a:hover {
+            background-color: #3d8c7f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .cover-btn {
+            background-color: #e74c3c;
+            font-weight: bold;
+        }
+        .cover-btn:hover {
+            background-color: #c0392b;
+        }
+        .music-control {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .music-control p {
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 小智的社交冒險：智慧指引全集</h1>
+        <p class="subtitle">歡迎來到這趟充滿學習與成長的旅程！請點擊下方按鈕進入各個場景。</p>
+        
+        <!-- 音樂播放器區塊 -->
+        <div class="music-control">
+            <p>🎵 背景音樂：輕柔鋼琴曲</p>
+            <audio id="bgMusic" controls loop autoplay>
+                <source src="piano.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音樂播放。
+            </audio>
+            <p style="font-size: 0.8em; color: #888; margin-top: 5px;">* 若瀏覽器阻擋自動播放，請手動點擊播放按鈕享受音樂。</p>
+        </div>
+
+        <ul>
+            <li><a href="https://share.gemini.google/rBPx08VsVYKQ" target="_blank" class="cover-btn">🏠 封面頁與總目錄</a></li>
+            <li><a href="https://share.gemini.google/GmNs8MDFPlEu" target="_blank">🌟 場景一：故事的起點</a></li>
+            <li><a href="https://share.gemini.google/sBKsRVD1SzbV" target="_blank">🌟 場景二：觀察與聆聽</a></li>
+            <li><a href="https://share.gemini.google/P6LkgSRO0waR" target="_blank">🌟 場景三：勇敢表達</a></li>
+            <li><a href="https://share.gemini.google/kiryFcbZthcY" target="_blank">🌟 場景四：解決衝突</a></li>
+            <li><a href="https://share.gemini.google/nBCpacj7LME8" target="_blank">🌟 場景五：同理心</a></li>
+            <li><a href="https://share.gemini.google/t3Xf1UMB6a1N" target="_blank">🌟 場景六：團隊合作</a></li>
+            <li><a href="https://share.gemini.google/hCGZif55tvZS" target="_blank">🌟 場景七：禮貌的界線</a></li>
+            <li><a href="https://share.gemini.google/0xd0fxvLLG3u" target="_blank">🌟 場景八：自我管理</a></li>
+            <li><a href="https://share.gemini.google/yCR1iY1V9Mfa" target="_blank">🌟 場景九：面對挫折</a></li>
+            <li><a href="https://share.gemini.google/tKTAD0geI1St" target="_blank">🌟 場景十：友誼的果實</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        // 嘗試在使用者互動後確保音樂播放
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('bgMusic');
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>
